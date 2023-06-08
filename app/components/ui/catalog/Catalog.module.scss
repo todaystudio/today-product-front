@@ -1,0 +1,43 @@
+.card {
+	a {
+		color: #000000e0;
+	}
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+
+	color: #000000e0;
+
+	.image {
+		display: block;
+		margin-bottom: 10px;
+		height: 200px;
+		img {
+			max-height: 100%;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	.category {
+		margin: 10px 0;
+		display: block;
+	}
+
+	.title {
+		margin: 0;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 20px;
+		max-height: 40px;
+		overflow: hidden;
+	}
+
+	.weight {
+		color: rgba(0, 0, 0, 0.45);
+		font-size: 13px;
+		line-height: 13px;
+	}
+}

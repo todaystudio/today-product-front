@@ -1,0 +1,59 @@
+.link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+
+	.title {
+		width: 70%;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		> div {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			> span {
+				display: block;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+
+				font-weight: 400;
+				font-size: 14px;
+				color: #3f3e3e;
+			}
+			> i {
+				color: #7b7b7b;
+				font-size: 12px;
+			}
+		}
+
+		> img {
+			object-fit: contain;
+		}
+	}
+
+	.prices {
+		text-align: end;
+		.lastPrice {
+			font-weight: 600;
+			font-size: 16px;
+			color: #3f3e3e;
+		}
+
+		.percents {
+			font-style: italic;
+			font-size: 12px;
+
+			&Up {
+				color: #52c41a;
+			}
+
+			&Down {
+				color: #ff4d4f;
+			}
+		}
+	}
+}

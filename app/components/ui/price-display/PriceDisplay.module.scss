@@ -1,0 +1,64 @@
+.prices {
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	&Lg {
+		font-size: 50px;
+		.percentToLastPrice,
+		.toLastPrice {
+			font-size: 0.35em !important;
+		}
+	}
+	&Md {
+		font-size: 30px;
+	}
+	&Xs {
+		font-size: 16px;
+	}
+
+	&Start {
+		align-items: start;
+	}
+	&Center {
+		align-items: center;
+	}
+	&End {
+		align-items: end;
+	}
+
+	flex-direction: column;
+
+	.subPrices {
+		text-align: end;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+	}
+
+	.lastPrice {
+		line-height: 1;
+		font-size: 1em;
+		font-weight: 700;
+
+		&Light {
+			color: #fff;
+		}
+		&Dark {
+			color: #525252;
+		}
+	}
+
+	.toLastPrice {
+		font-weight: 500;
+	}
+
+	.percentToLastPrice,
+	.toLastPrice {
+		font-style: italic;
+		font-size: 0.48em;
+	}
+}
